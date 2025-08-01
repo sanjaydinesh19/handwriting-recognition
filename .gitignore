@@ -1,0 +1,12 @@
+__pycache__/
+.vscode/
+*.pyc
+*.pt
+*.onnx
+*.csv
+*.txt
+*.log
+venv/
+Datasets/
+Models/
+.env
