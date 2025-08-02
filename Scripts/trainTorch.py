@@ -24,8 +24,8 @@ from mltu.transformers import ImageResizer, LabelIndexer, LabelPadding, ImageSho
 from mltu.augmentors import RandomBrightness, RandomRotate, RandomErodeDilate, RandomSharpen  # → Augmentors
 from mltu.annotations.images import CVImage  # → OpenCV Image Manipulation
 
-from Scripts.model import Network  # → PyTorch Model
-from Scripts.configs import ModelConfigs  # → Training Hyperparameters
+from model import Network  # → PyTorch Model
+from configs import ModelConfigs  # → Training Hyperparameters
 
 
 # -------------------------------------------------------------
