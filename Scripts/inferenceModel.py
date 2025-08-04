@@ -59,10 +59,10 @@ if __name__ == "__main__":
     from tqdm import tqdm
 
     # Load ONNX model
-    model = ImageToWordModel(model_path=r"C:\Sanjay\College\Research\Handwriting Recognition\Models\pytorch_recognition\202507022235\model.onnx")
+    model = ImageToWordModel(model_path=r"C:\Sanjay\College\Research\Handwriting Recognition\Scripts\Models\pytorch_recognition\202508032158\model.onnx")
 
     # Load validation CSV data [image_path, label]
-    df = pd.read_csv(r"C:\Sanjay\College\Research\Handwriting Recognition\Models\pytorch_recognition\202507022235\val.csv").values.tolist()
+    df = pd.read_csv(r"C:\Sanjay\College\Research\Handwriting Recognition\Scripts\Models\pytorch_recognition\202508032158\val.csv").values.tolist()
 
     predicted_words = []
 
