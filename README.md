@@ -44,16 +44,19 @@ The model consists of:
 ## Project Structure
 
 ```
-├── Scripts/ # All model, training, and inference scripts
-│ ├── model.py # Model architecture (CNN + BiLSTM)
-│ ├── configs.py # Training hyperparameters & model metadata
-│ ├── trainTorch.py # Dataset download, preprocessing, training
-│ └── inferenceModel.py # ONNX model loader & image-to-text inference
-├── Datasets/ # IAM_Words dataset (auto-downloaded)
-├── Models/ # Saved PyTorch & ONNX models (timestamped)
-├── predictions.txt # Paragraph output of inference
-├── requirements.txt # Python dependencies
-└── README.md
+├── Scripts/                       # All model, training, and inference scripts
+│   ├── model.py                  # Model architecture (CNN + BiLSTM)
+│   ├── configs.py                # Training hyperparameters & model metadata
+│   ├── trainTorch.py            # Dataset download, preprocessing, training
+│   ├── inferenceModel.py        # ONNX model loader & image-to-text inference
+│   ├── inferenceModelTestImage.py  # Inference on manually labeled word images
+│   └── comparePredictions.py    # Evaluate predictions vs ground truth (CER/WER)
+├── Datasets/                     # IAM_Words dataset (auto-downloaded)
+│   └── Test/                     # Optional test images (e.g., 1.png to N.png)
+├── Models/                       # Saved PyTorch & ONNX models (timestamped)
+├── predictions.txt              # Paragraph output of inference
+├── requirements.txt             # Python dependencies
+└── README.md                    # Project documentation
 ```
 
 ---
